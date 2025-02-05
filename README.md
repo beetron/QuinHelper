@@ -20,7 +20,7 @@ QuinAutoRunは、The Quinfallのゲームでオートラン切り替えるため
    Edgeだとウィルス検知されて削除されます。無効するかChrome使う。
 3. 管理者としてファイルを実行しないと使えないので注意。(縮小してても使えます)
 4. Windows .Net 8.0のライブラリのインストールが必要と言われるので[ダウンロード](https://download.visualstudio.microsoft.com/download/pr/f1e7ffc8-c278-4339-b460-517420724524/f36bb75b2e86a52338c4d3a90f8dac9b/windowsdesktop-runtime-8.0.12-win-x64.exe)してインストール。リンクはMicrosoft公式。
-5. プログラム起動後、ゲーム内で`Z`キーを使用してオートランをオン/オフします。
+5. プログラム起動後、ゲーム内で`マウスホイールダウン`を使用してオートランをオン/オフします。
 
 <span style="color:red;">*重要*</span>  UIカーソルモードにいないことを確認してください。
 
@@ -48,7 +48,7 @@ QuinAutoRun is a simple tool to toggle auto-run in The Quinfall game.
    Edge will handle file as virus and auto-delete.  Use Chrome or temporarily lower security level.
 2. Run file as Administrator. (You could minimize the program)
 3. You will probably have to install .Net 8.0 runtime [Download](https://download.visualstudio.microsoft.com/download/pr/f1e7ffc8-c278-4339-b460-517420724524/f36bb75b2e86a52338c4d3a90f8dac9b/windowsdesktop-runtime-8.0.12-win-x64.exe)and install。Link is from Microsoft.
-4. Launch program again.  Use the `Z` key while in-game to toggle auto-run ON/OFF.
+4. Launch program again.  Use the `Mouse Wheel Down` while in-game to toggle auto-run ON/OFF.
 
 <span style="color:red;">*IMPORTANT*</span>  Use when not in UI/Cursor mode.
 
