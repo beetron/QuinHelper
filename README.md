@@ -46,7 +46,7 @@ QuinAutoRun is a simple tool to toggle auto-run in The Quinfall game.
 ## Usage
 
 1. Download latest exe release from [here](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0/QAR-v.1.0.zip)
-2. zip password: 123
+2. zip password: 123 <br>
    The zip file is encrypted with password: 123 to prevent automatic download removal for false virus detection.
    You may have to add the folder or exe file to your Windows Defender exception list.
 3. Run file as Administrator. (You could minimize the program)
