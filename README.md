@@ -16,7 +16,7 @@ QuinAutoRunは、The Quinfallのゲームでオートラン切り替えるため
 
 ## 使用方法
 
-1. 最新のexeリリースを[こちら](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0/QuinAutoRun-v1.0.zip)からダウンロードします。
+1. 最新のexeリリースを[こちら](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0/QuinAutoRun-v1.0b.zip)からダウンロードします。
 2. zipパスワード: 123 <br>
    ウィルスのご認識で自動でダウンロード時に削除されるのを回避するためにパスワードで暗号化しています。
    解凍先は脅威ファイル除外設定をしないと自動的に削除されるかもしれません。
@@ -45,7 +45,7 @@ QuinAutoRun is a simple tool to toggle auto-run in The Quinfall game.
 
 ## Usage
 
-1. Download latest exe release from [here](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0/QuinAutoRun-v1.0.zip)
+1. Download latest exe release from [here](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0b/QuinAutoRun-v1.0.zip)
 2. zip password: 123 <br>
    The zip file is encrypted with password: 123 to prevent automatic download removal for false virus detection.
    You may have to add the folder or exe file to your Windows Defender exception list.
