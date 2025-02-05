@@ -52,7 +52,7 @@ QuinAutoRun is a simple tool to toggle auto-run in The Quinfall game.
 3. Run file as Administrator. (You could minimize the program)
 4. Use the `Middle Mouse Button` while in-game to toggle auto-run ON/OFF.
 
-<span style="color:red;">*IMPORTANT*</span>  Use when your not in UI/Cursor mode.
+<span style="color:red;">*IMPORTANT*</span>  Use when not in UI/Cursor mode.
 
 ## License
 
