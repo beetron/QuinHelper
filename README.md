@@ -1,5 +1,5 @@
 # QuinAutoRun
-#[English Below](#english-version)
+[🔥 ENGLISH VERSION 🔥](#english-version)
 
 一時的なオートラン出来ない問題の解決ツール、The Quinfallの開発者がその機能を追加するまで。
 
