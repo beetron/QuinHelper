@@ -9,11 +9,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="F12  (ツール無効化切り替え)" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,5,0,0"/>
+        <TextBlock Text="F11  (ツール無効化切り替え)" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,5,0,0"/>
         <TextBlock Text="Middle Mouse (オートラン切り替え)" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
-        <Border x:Name="StatusBorder" BorderThickness="2" CornerRadius="5" Padding="5" Background="Red" Height="50" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Border x:Name="StatusBorder" BorderThickness="2" CornerRadius="5" Padding="5" Background="Red" Height="50" Width="140" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="StatusTextBlock" Text="STOPPED" Foreground="White" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
-        <TextBlock Text="QuinAutoRun v1.0d by Kabi" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Grid.Row="2"/>
+        <TextBlock Text="QuinAutoRun v1.0e by Kabi" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Grid.Row="2"/>
     </Grid>
 </Window>
