@@ -1,5 +1,5 @@
 # QuinAutoRun
-[English Below](#english-version)
+[🔥 ENGLISH BELOW 🔥](#english-version)
 
 一時的なオートラン出来ない問題の解決ツール、The Quinfallの開発者がその機能を追加するまで。
 
@@ -16,9 +16,11 @@ QuinAutoRunは、The Quinfallのゲームでオートラン切り替えるため
 
 ## 使用方法
 
-1. 最新のexeリリースを[こちら](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0.0/QuinAutoRun-1.0.0.zip)からダウンロードします。
-2. 管理者としてファイルを実行しないと使えないので注意。(縮小してても使えます)
-3. ゲーム内で`マウスミドルボタン`を使用してオートランをオン/オフします。
+1. 最新のexeリリースを[こちら](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0/QuinAutoRun-v1.0d.zip)からダウンロードします。<br>
+   Edgeだとウィルス検知されて削除されます。無効するかChrome使う。
+3. 管理者としてファイルを実行しないと使えないので注意。(縮小してても使えます)
+4. Windows .Net 8.0のライブラリのインストールが必要と言われるので[ダウンロード](https://download.visualstudio.microsoft.com/download/pr/f1e7ffc8-c278-4339-b460-517420724524/f36bb75b2e86a52338c4d3a90f8dac9b/windowsdesktop-runtime-8.0.12-win-x64.exe)してインストール。リンクはMicrosoft公式。
+5. プログラム起動後、ゲーム内で`マウスホイールダウン`を使用してオートランをオン/オフします。
 
 <span style="color:red;">*重要*</span>  UIカーソルモードにいないことを確認してください。
 
@@ -42,11 +44,13 @@ QuinAutoRun is a simple tool to toggle auto-run in The Quinfall game.
 
 ## Usage
 
-1. Download latest exe release from [here](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0.0/QuinAutoRun-1.0.0.zip)
+1. Download latest exe release from [here](https://github.com/beetron/QuinAutoRun/releases/download/v.1.0b/QuinAutoRun-v1.0d.zip)<br>
+   Edge will handle file as virus and auto-delete.  Use Chrome or temporarily lower security level.
 2. Run file as Administrator. (You could minimize the program)
-3. Use the `Middle Mouse Button` while in-game to toggle auto-run ON/OFF.
+3. You will probably have to install .Net 8.0 runtime [Download](https://download.visualstudio.microsoft.com/download/pr/f1e7ffc8-c278-4339-b460-517420724524/f36bb75b2e86a52338c4d3a90f8dac9b/windowsdesktop-runtime-8.0.12-win-x64.exe)and install。Link is from Microsoft.
+4. Launch program again.  Use the `Mouse Wheel Down` while in-game to toggle auto-run ON/OFF.
 
-<span style="color:red;">*IMPORTANT*</span>  Use when your not in UI/Cursor mode.
+<span style="color:red;">*IMPORTANT*</span>  Use when not in UI/Cursor mode.
 
 ## License
 
