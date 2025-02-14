@@ -1,10 +1,7 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Threading;
 
 namespace QuinAutoRun
 {
@@ -151,10 +148,13 @@ namespace QuinAutoRun
             isRunning = false;
             UpdateStatus("STOPPED", Colors.Red);
 
+
+            //DISABLE short press down
+
             // Simulate key press and release for 0.2 seconds
-            keybd_event(VK_SHIFT, 0, 0, UIntPtr.Zero);
-            keybd_event(VK_W, 0, 0, UIntPtr.Zero);
-            Thread.Sleep(200); // Hold keys for 0.2 seconds
+            //keybd_event(VK_SHIFT, 0, 0, UIntPtr.Zero);
+            //keybd_event(VK_W, 0, 0, UIntPtr.Zero);
+            //Thread.Sleep(200); // Hold keys for 0.2 seconds
             keybd_event(VK_W, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
             keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
         }
