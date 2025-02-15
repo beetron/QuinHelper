@@ -1,4 +1,4 @@
-# QuinAutoRun
+# QuinHelper
 
 ![QuinAutoRun](https://raw.githubusercontent.com/beetron/QuinHelper/master/QuinHelper-v1.1a.png)
 
