@@ -3,10 +3,8 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Collections.Generic;
 using System.Windows.Controls;
 using System.IO;
-using System.Linq;
 
 namespace QuinHelper
 {
@@ -29,6 +27,8 @@ namespace QuinHelper
         private const int VK_SHIFT = 0x10;
         private const int VK_W = 0x57;
         private const uint KEYEVENTF_KEYUP = 0x0002;
+        private Color customRunColor = (Color)ColorConverter.ConvertFromString("#4A707A");
+        private Color customStopColor = (Color)ColorConverter.ConvertFromString("#C2C8C5");
 
         private Dictionary<string, string> keybinds = new Dictionary<string, string>();
 
@@ -57,6 +57,9 @@ namespace QuinHelper
 
         [DllImport("user32.dll")]
         private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+        [DllImport("user32.dll")]
+        private static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
         private const int SW_RESTORE = 9;
 
@@ -140,7 +143,7 @@ namespace QuinHelper
                 if (vkCode == VK_F11)
                 {
                     isListening = !isListening;
-                    UpdateStatus(isListening ? "LISTENING" : "NOT LISTENING", isListening ? Colors.Green : Colors.Gray);
+                    UpdateStatus(isListening ? "LISTENING" : "NOT LISTENING", isListening ? customRunColor : customStopColor);
                 }
                 else if (isListening && keybinds.ContainsValue(keyString))
                 {
@@ -255,7 +258,7 @@ namespace QuinHelper
             }
 
             isRunning = true;
-            UpdateStatus("RUNNING", Colors.Green);
+            UpdateStatus("RUNNING", customRunColor);
 
             // Simulate key press
             keybd_event(VK_SHIFT, 0, 0, UIntPtr.Zero);
@@ -265,7 +268,7 @@ namespace QuinHelper
         private void StopKeyHolding()
         {
             isRunning = false;
-            UpdateStatus("STOPPED", Colors.Red);
+            UpdateStatus("STOPPED", customStopColor);
 
             // Simulate key release
             keybd_event(VK_W, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
@@ -335,7 +338,6 @@ namespace QuinHelper
             }
         }
 
-        [DllImport("user32.dll")]
-        private static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+
     }
 }

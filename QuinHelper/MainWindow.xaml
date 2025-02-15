@@ -3,6 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="QuinHelper" Height="236" Width="570"
         ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="#94B0B7" Offset="0"/>
+            <GradientStop Color="#4A707A" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid Margin="0,0,10,9">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -11,14 +17,14 @@
         </Grid.RowDefinitions>
         <TextBlock Text="F11  (ツール On/Off)" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,10,0,0" Grid.Row="1"/>
         <TextBlock Text="Middle Mouse (オートラン On/Off)" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="167,35,0,0" Grid.Row="1"/>
-        <Border x:Name="StatusBorder" BorderThickness="2" CornerRadius="5" Padding="5" Background="Red" Height="50" Width="140" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,10,0,0">
+        <Border x:Name="StatusBorder" BorderThickness="2" CornerRadius="5" Padding="5" Background="#4A707A" Height="50" Width="140" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,10,0,0">
             <TextBlock x:Name="StatusTextBlock" Text="STOPPED" Foreground="White" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
         <TextBlock Text="QuinHelper v1.1a -  beetron" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Grid.Row="2"/>
 
         <!-- New Keybind Section -->
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,79,0,18" Grid.Row="1" Grid.RowSpan="2" Width="540">
-            <TextBlock Text="Keybinds (ESC to reset)" FontWeight="Bold"/>
+            <TextBlock Text="Keybinds (ESC to reset)" FontWeight="Bold" Margin="10,0,0,0"/>
             <UniformGrid Rows="2" Columns="10" Width="538">
                 <!-- First Row: F1 to F10 -->
                 <StackPanel HorizontalAlignment="Center">
@@ -90,6 +96,3 @@
         <Button Content="Reset" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="457,15,0,0" Width="75" Click="ResetButton_Click" Grid.Row="1"/>
     </Grid>
 </Window>
-
-
-
