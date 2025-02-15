@@ -8,7 +8,7 @@ using System.Windows.Controls;
 using System.IO;
 using System.Linq;
 
-namespace QuinAutoRun
+namespace QuinHelper
 {
     public partial class MainWindow : Window
     {
@@ -75,6 +75,14 @@ namespace QuinAutoRun
             _keyboardHookID = SetKeyboardHook(_keyboardProc);
             toggleStopwatch.Start();
             LoadKeybinds();
+
+            // Disable F10 textbox and set its background color to black
+            var f10TextBox = FindName("KeybindF10") as TextBox;
+            if (f10TextBox != null)
+            {
+                f10TextBox.IsEnabled = false;
+                f10TextBox.Background = new SolidColorBrush(Colors.Black);
+            }
         }
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -209,15 +217,19 @@ namespace QuinAutoRun
                     return;
                 }
 
-                string key = e.Key.ToString();
-                if (Keyboard.Modifiers != ModifierKeys.None)
+                if (Keyboard.Modifiers == ModifierKeys.Shift)
                 {
+                    string key = e.Key.ToString();
                     key = $"{Keyboard.Modifiers} + {key}";
-                }
 
-                textBox.Text = key;
-                keybinds[textBox.Name] = key; // Store the key with modifiers in the dictionary
-                e.Handled = true;
+                    textBox.Text = key;
+                    keybinds[textBox.Name] = key; // Store the key with modifiers in the dictionary
+                    e.Handled = true;
+                }
+                else
+                {
+                    e.Handled = true; // Ignore other key inputs
+                }
             }
         }
 
@@ -327,7 +339,3 @@ namespace QuinAutoRun
         private static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
     }
 }
-
-
-
-

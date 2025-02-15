@@ -1,4 +1,4 @@
-﻿<Window x:Class="QuinAutoRun.MainWindow"
+﻿<Window x:Class="QuinHelper.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="QuinHelper" Height="236" Width="570"
