@@ -2,7 +2,7 @@
 
 ![QuinAutoRun](https://raw.githubusercontent.com/beetron/QuinHelper/master/QuinHelper-v1.1a.png)
 
-[🔥 CLICK HERE for ENGLISH 🔥](#english-version)
+[🔥 CLICK HERE for ENGLISH 🔥](#english)
 
 ## 目次
 
@@ -42,7 +42,7 @@ QuinHelperは、The Quinfallのゲームでオートランとホットキーを�
 
 このプロジェクトはMITライセンスの下でライセンスされています。詳細は[LICENSE](LICENSE)ファイルを参照してください。
 
-# English Version
+# English
 
 Temporary solution to your auto-run needs until the developers of The Quinfall add such a feature.
 
